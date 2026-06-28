@@ -3,7 +3,7 @@ name: Monitor llb.su tournament page
 on:
   schedule:
     # Каждые 30 минут (UTC). Можно изменить на */15 или */60 при желании.
-    - cron: '0,30 * * * *'
+    - cron: '0,10 * * * *'
   workflow_dispatch: {}   # позволяет запустить вручную кнопкой "Run workflow"
 
 permissions:
