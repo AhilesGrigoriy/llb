@@ -121,8 +121,6 @@ def main() -> None:
     else:
         message1 = (
             " Изменений нет\n\n"
-            f"{URL}\n\n"
-            f"{section[:500]}"
         )
         send_telegram_message(message1)
         print("Изменений нет.")
