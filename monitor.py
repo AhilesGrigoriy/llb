@@ -119,6 +119,12 @@ def main() -> None:
         save_state(content_hash, section)
         print("Обнаружено изменение, уведомление отправлено.")
     else:
+        message1 = (
+            " Изменений нет\n\n"
+            f"{URL}\n\n"
+            f"{section[:500]}"
+        )
+        send_telegram_message(message1)
         print("Изменений нет.")
 
 
